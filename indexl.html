@@ -1,0 +1,346 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSS Watercare - Premium Water Purifiers & Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5fbfd;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHg9IjAiIHk9IjAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyMzMsMjQ5LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNwYXR0ZXJuKSIvPjwvc3ZnPg==');
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #22d3ee 0%, #3b82f6 100%);
+        }
+        
+        .water-drop {
+            position: relative;
+        }
+        
+        .water-drop:after {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 15px solid #0ea5e9;
+        }
+        
+        .feature-icon {
+            font-size: 2rem;
+            color: #3b82f6;
+            margin-bottom: 1rem;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        #gallery img {
+            transition: transform 0.3s ease;
+        }
+        
+        #gallery img:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="https://via.placeholder.com/60x60.png?text=SSS+Logo" alt="SSS Watercare Logo" class="h-12 w-12 rounded-full border-2 border-blue-500">
+                    <div class="ml-3">
+                        <h1 class="text-xl font-bold text-blue-600">SSS Watercare</h1>
+                        <p class="text-xs text-gray-500">Sri Shivakumara Swamy Watercare</p>
+                    </div>
+                </div>
+                
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-blue-600 font-medium hover:text-blue-800 transition">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition">About</a>
+                    <a href="#products" class="text-gray-700 hover:text-blue-600 transition">Products</a>
+                    <a href="#services" class="text-gray-700 hover:text-blue-600 transition">Services</a>
+                    <a href="#gallery" class="text-gray-700 hover:text-blue-600 transition">Gallery</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
+                </nav>
+                
+                <button class="md:hidden text-blue-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+                
+                <a href="tel:7411101228" class="hidden md:block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition">
+                    Call Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">Pure Water. Healthy Life.</h1>
+                <p class="text-xl mb-8">Premium water purifiers & services for your home and business in Karnataka.</p>
+                
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="tel:7411101228" class="bg-white text-blue-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-bold text-center transition">
+                        <i class="fas fa-phone-alt mr-2"></i> Call Now
+                    </a>
+                    <a href="https://wa.me/917411101228" class="bg-green-500 hover:bg-green-600 px-6 py-3 rounded-lg font-bold text-center text-white transition">
+                        <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+            
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://via.placeholder.com/500x400.png?text=Water+Purifier" alt="SSS Water Purifier" class="rounded-lg shadow-xl w-full max-w-md">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-3">About SSS Watercare</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://via.placeholder.com/500x350.png?text=Technician+at+Work" alt="Technician" class="rounded-lg shadow-md w-full">
+                </div>
+                
+                <div class="md:w-1/2">
+                    <p class="text-lg text-gray-700 mb-6">
+                        SSS Watercare offers expert service for water purifiers, gas geysers, UPS batteries, and solar systems. We handle installation, repair, maintenance, and filter replacement for all major brands.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-8">
+                        Clean water and uninterrupted power – trusted and affordable! Serving customers across Karnataka with reliable solutions since 2010.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-blue-50 p-4 rounded-lg text-center">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <h3 class="font-bold text-blue-700">Quality Service</h3>
+                            <p class="text-sm text-gray-600">Skilled technicians</p>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg text-center">
+                            <i class="fas fa-clock feature-icon"></i>
+                            <h3 class="font-bold text-blue-700">Quick Response</h3>
+                            <p class="text-sm text-gray-600">Same day service</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Product -->
+    <section id="products" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-3">Featured Product</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row justify-center items-center">
+                <div class="lg:w-2/3 mb-8 lg:mb-0">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                        <div class="flex flex-col md:flex-row">
+                            <div class="md:w-1/2">
+                                <img src="https://via.placeholder.com/600x600.png?text=Copper+Pearl+Purifier" alt="Copper Pearl Water Purifier" class="w-full h-full object-cover">
+                            </div>
+                            <div class="md:w-1/2 p-6">
+                                <h3 class="text-2xl font-bold text-blue-600 mb-2">Copper Pearl Water Purifier</h3>
+                                <p class="text-gray-600 mb-1">Wall Mounting or Counter-top Installation</p>
+                                
+                                <div class="my-4">
+                                    <span class="text-3xl font-bold text-gray-800">₹12,000</span>
+                                    <span class="ml-2 bg-green-100 text-green-800 px-2 py-1 rounded text-sm">1 Year Warranty</span>
+                                </div>
+                                
+                                <div class="mb-6">
+                                    <div class="flex items-center mb-2">
+                                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                        <span>RO + ZN + CU + ALK + UV + TDS</span>
+                                    </div>
+                                    <div class="flex items-center mb-2">
+                                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                        <span>Detachable tank for easy cleaning</span>
+                                    </div>
+                                    <div class="flex items-center mb-2">
+                                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                        <span>LED Indicator for power & purification</span>
+                                    </div>
+                                    <div class="flex items-center mb-2">
+                                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                        <span>Made from 100% Virgin Food Grade Plastic (WHO Certified)</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                        <span>12L storage | 15L/hr purification</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex space-x-3">
+                                    <a href="tel:7411101228" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-lg text-center font-medium transition">
+                                        <i class="fas fa-phone-alt mr-2"></i> Enquire Now
+                                    </a>
+                                    <a href="https://wa.me/917411101228" class="flex-1 bg-green-500 hover:bg-green-600 text-white py-3 px-4 rounded-lg text-center font-medium transition">
+                                        <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/3 lg:pl-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg mb-6">
+                        <h4 class="font-bold text-lg mb-4">Why choose our products?</h4>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-shield-alt text-blue-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h5 class="font-medium text-gray-800">Premium Quality</h5>
+                                    <p class="text-sm text-gray-600">Certified materials meeting international standards</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-hand-holding-usd text-blue-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h5 class="font-medium text-gray-800">Affordable Price</h5>
+                                    <p class="text-sm text-gray-600">Best prices with genuine warranty</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-headset text-blue-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h5 class="font-medium text-gray-800">24/7 Support</h5>
+                                    <p class="text-sm text-gray-600">Dedicated support team for any issues</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-blue-50 p-6 rounded-xl shadow-inner border border-blue-100">
+                        <h4 class="font-bold text-lg mb-3 text-blue-700">Need Help Choosing?</h4>
+                        <p class="text-gray-700 mb-4">Our water experts will help you select the perfect purifier for your needs.</p>
+                        <a href="tel:7411101228" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-medium transition block text-center">
+                            <i class="fas fa-phone-alt mr-2"></i> Call our Expert
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-3">Our Services</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+                <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">Comprehensive solutions for all your water and power needs</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-xl shadow-md p-6 text-center border-t-4 border-blue-500 hover:shadow-lg transition">
+                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-tint text-blue-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Water Purifiers</h3>
+                    <p class="text-gray-600">Installation, repair, maintenance and filter replacement for all major brands.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-6 text-center border-t-4 border-blue-500 hover:shadow-lg transition">
+                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-fire text-blue-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Gas Geysers</h3>
+                    <p class="text-gray-600">Expert service for instant and storage gas geysers.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-6 text-center border-t-4 border-blue-500 hover:shadow-lg transition">
+                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-battery-full text-blue-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">UPS Batteries</h3>
+                    <p class="text-gray-600">Installation and maintenance of home and office UPS systems.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-6 text-center border-t-4 border-blue-500 hover:shadow-lg transition">
+                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-solar-panel text-blue-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Solar Systems</h3>
+                    <p class="text-gray-600">Complete solar power solutions for homes and businesses.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-3">Our Gallery</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-xl shadow-md">
+                    <img src="https://via.placeholder.com/600x400.png?text=Purifier+1" alt="Water Purifier" class="w-full h-64 object-cover">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-md">
+                    <img src="https://via.placeholder.com/600x400.png?text=Purifier+2" alt="Water Purifier" class="w-full h-64 object-cover">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-md">
+                    <img src="https://via.placeholder.com/600x400.png?text=Technician+Working" alt="Technician at Work" class="w-full h-64 object-cover">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-md">
+                    <img src="https://via.placeholder.com/600x400.png?text=Installation" alt="Installation Service" class="w-full h-64 object-cover">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-md">
+                    <img src="https://via.placeholder.com/600x400.png?text=Filter+Replacement" alt="Filter Replacement" class="w-full h-64 object-cover">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-md">
+                    <img src="https://via.placeholder.com/600x400.png?text=Customer+Service" alt="Customer Service" class="w-full h-64 object-cover">
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="https://www.instagram.com/ssswatercare/" target="_blank" class="inline-flex items-center bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white py-3 px-6 rounded-lg font-medium hover:shadow-lg transition">
+                    <i class="fab fa-instagram mr-2 text-xl"></i> Follow us on Instagram for more
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-3">Customer Testimonials</h2>
+                <div class="w-20 h-1 bg-white mx-auto"></div>
+                <p class="text-lg mt-4 max-w-2xl mx-auto">Hear what our customers say about our products and services</p>
+            </div>
+            
+    
